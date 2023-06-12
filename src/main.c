@@ -65,7 +65,7 @@ void spigot() { //https://craftofcoding.wordpress.com/tag/spigot-algorithm/
          q = x / (2*i-1);
       }
       a[0] = q % 10;
-      q = (q >> 1) + (q >> 2) + (q >> 3);  // Divide q by 10 using bit shifting
+      q = q / 10;
       if (q == 9)
          nines = nines + 1;
       else if (q == 10) {
